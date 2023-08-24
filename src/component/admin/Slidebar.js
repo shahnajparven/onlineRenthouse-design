@@ -1,6 +1,5 @@
 import React from "react";
 import "./Slidebar.css";
-import logo from "../../../src/project-pic/home.png";
 import { Link } from "react-router-dom";
 import { TreeView, TreeItem } from "@material-ui/lab";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
