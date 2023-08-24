@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import Sidebar from "./Slidebar";
 import "./dashboard.css";
@@ -18,14 +19,14 @@ const Dashboard = () => {
 
    const { users } = useSelector((state) => state.allUsers);
 
-  let outOfStock = 0;
+  // let outOfStock = 0;
 
-  products &&
-    products.forEach((item) => {
-      if (item.Stock === 0) {
-        outOfStock += 1;
-      }
-    });
+  // products &&
+  //   products.forEach((item) => {
+  //     if (item.Stock === 0) {
+  //       outOfStock += 1;
+  //     }
+  //   });
 
   useEffect(() => {
     dispatch(getAdminProduct());

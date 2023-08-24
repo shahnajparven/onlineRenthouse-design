@@ -10,10 +10,10 @@ const Form = () => {
                 <a href="mailto:shahnajritu21@gmail.com">
                     <FaEnvelope />
                 </a>
-                <a target="_blank" href="https://twitter.com/ShahnajRitu">
+                <a target="blank" href="https://twitter.com/ShahnajRitu">
                     <FaTwitter />
                 </a>
-                <a target="_blank" href="https://www.facebook.com/shahnaj.ritu.5">
+                <a target="blank" href="https://www.facebook.com/shahnaj.ritu.5">
                     <FaFacebookF />
                 </a>
             </div>

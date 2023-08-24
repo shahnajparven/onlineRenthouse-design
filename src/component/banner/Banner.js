@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react";
+import React, {Fragment } from "react";
 
 import pic2 from "../../project-pic/dhak.jpg";
 

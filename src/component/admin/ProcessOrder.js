@@ -6,7 +6,6 @@ import {
   getOrderDetails,
   clearErrors,
   updateOrder,
-  deleteProduct,
 } from "../../actions/orderAction";
 import { useSelector, useDispatch } from "react-redux";
 import Loader from "../../layout/Loader";
@@ -21,9 +20,9 @@ const ProcessOrder = ({ history, match,params }) => {
   const { error: updateError, isUpdated } = useSelector((state) => state.order);
   const { error: deleteError, isDeleted } = useSelector((state) => state.product);
 
-  const deleteProductHandler = (id) => {
-    dispatch(deleteProduct(id));
-  };
+  // const deleteProductHandler = (id) => {
+  //   dispatch(deleteProduct(id));
+  // };
 
   const updateOrderSubmitHandler = (e) => {
     e.preventDefault();
