@@ -1,27 +1,18 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Overlay from 'react-bootstrap/Overlay';
-import $ from 'jquery';
-import styled from 'styled-components';
+import { useState } from 'react';
 import './Pickup.css';
-import Container from 'react-bootstrap/esm/Container';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import pickup from '../../project-pic/pickup.png';
 import pickup1 from '../../project-pic/pick.jpg';
-import { Tooltip, OverlayTrigger, Form } from 'react-bootstrap';
-import Modal from 'react-bootstrap/Modal';
-import { Row, Col } from 'react-bootstrap';
 import Test from './Test';
 
 
 //For modal
 const Pickup = () => {
-    const [show, setShow] = useState(false);
+    // const [show, setShow] = useState(false);
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    // const handleClose = () => setShow(false);
+    // const handleShow = () => setShow(true);
 
     return (
         <>

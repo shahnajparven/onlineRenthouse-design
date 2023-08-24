@@ -6,9 +6,6 @@ import { Link } from "react-router-dom";
 import { Doughnut, Line } from "react-chartjs-2";
 import { useSelector, useDispatch } from "react-redux";
 import { getAdminProduct } from "../../actions/productAction";
- import { getAllOrders } from "../../actions/orderAction.js";
-import { getAllUsers } from "../../actions/userAction.js";
-import { userDetailsReducer } from "../../reducers/userReducer";
 import Renthouse from "../category/Renthouse";
 // import MetaData from "../layout/MetaData";
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaTwitter, FaEnvelope, FaFacebookF } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import Footer from './Footer';
 
 const Form = () => {
     return (

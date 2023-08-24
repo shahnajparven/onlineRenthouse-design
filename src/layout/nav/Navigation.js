@@ -1,28 +1,12 @@
 import React from 'react';
 import pic1 from '../../project-pic/h.png';
-import pic2 from '../../project-pic/login.png';
-import pic3 from '../../project-pic/menu.png';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import './Navigation.css';
 import '../../Main.css';
 import $ from 'jquery';
-import { FaSistrix,FaEject } from "react-icons/fa";
-import { IconContext } from "react-icons";
-import { useEffect, useState} from 'react';
-import Modal from 'react-bootstrap/Modal';
-import styled from 'styled-components';
-// import Search from '../../components/search/Search';
-import {Tooltip,OverlayTrigger} from 'react-bootstrap';
-import Overlay from 'react-bootstrap/Overlay';
-import {Link, NavLink,useLocation} from 'react-router-dom';
-import Products from '../../component/Home/Products';
-import Search from '../../component/Home/Search';
-import HomeIcon from '@mui/icons-material/Home';
+import {NavLink} from 'react-router-dom';
 
 
 
@@ -31,12 +15,12 @@ const Navigation = () => {
   
 
 //for modal
-const [show, setShow] = useState(false);
-const handleClose = () => setShow(false);
-const [showModal1,setShowModal1] = useState(false);
-const openModal1 = () =>{
-    setShowModal1(prev => !prev);
-};
+// const [show, setShow] = useState(false);
+// const handleClose = () => setShow(false);
+// const [showModal1,setShowModal1] = useState(false);
+// const openModal1 = () =>{
+//     setShowModal1(prev => !prev);
+// };
 
 
 //for scrolled jquery

@@ -1,12 +1,7 @@
-import React, { Fragment, useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import React, { Fragment} from 'react';
 import Button from 'react-bootstrap/Button';
-import $ from 'jquery';
 import './Category.css';
-import Container from 'react-bootstrap/esm/Container';
 import { NavLink } from 'react-router-dom';
-import pic1 from '../../project-pic/home.png';
-
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
 import Card from 'react-bootstrap/esm/Card';

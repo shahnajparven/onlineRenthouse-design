@@ -1,8 +1,7 @@
-import { Rating } from '@mui/material';
+
 import React from 'react';
 import ReactStars from 'react-rating-stars-component';
-import reactStars from 'react-rating-stars-component';
-import Product from '../Home/Product';
+
 
 const ReviewCard = ({review}) => {
 
@@ -11,7 +10,6 @@ const ReviewCard = ({review}) => {
     color: "rgba(20,20,20,0,1)",
     activeColor: "tomato",
     size: window.innerWidth < 600 ? 20 : 25,
-    color: "black",
     value: review.rating,
     isHalf: true,
   };

@@ -1,10 +1,5 @@
 import React from 'react';
 import './Footer.css';
-import Container from 'react-bootstrap/esm/Container';
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/esm/Col';
-import Row from 'react-bootstrap/Row';
-import { IconContext } from "react-icons";
 import Footerform from './Footerform.js';
 import Footericon from './Footericon.js';
 

@@ -1,4 +1,4 @@
-import React, { Fragment, useRef, useState, useEffect,Component } from "react";
+import React, {Component } from "react";
 import "./Category.css";
 import Paper from '@mui/material/Paper';
 import {

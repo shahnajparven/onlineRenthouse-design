@@ -1,19 +1,15 @@
-import React, { Fragment, useRef, useState, useEffect,Component } from "react";
+import React, { Component } from "react";
 import "./Category.css";
 import Paper from '@mui/material/Paper';
 import {
   Chart,
-  ArgumentAxis,
-  ValueAxis,
-  AreaSeries,
   Title,
   Legend,
   PieSeries,
 } from '@devexpress/dx-react-chart-material-ui';
-import { ArgumentScale, Animation } from '@devexpress/dx-react-chart';
+import { Animation } from '@devexpress/dx-react-chart';
 import { styled } from '@mui/material/styles';
-import { scalePoint } from 'd3-scale';
-import { Doughnut, Line } from "react-chartjs-2";
+import { Line } from "react-chartjs-2";
 
 
 

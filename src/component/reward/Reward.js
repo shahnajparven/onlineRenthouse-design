@@ -1,10 +1,8 @@
 import React from 'react';
-import Container from 'react-bootstrap/esm/Container';
-import grid1 from '../../project-pic/guest2.jpg';
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
 import Card from 'react-bootstrap/esm/Card';
-import CountUp, { useCountUp } from 'react-countup';
+import CountUp from 'react-countup';
 import './Reward.css';
 
 const Reward = () => {

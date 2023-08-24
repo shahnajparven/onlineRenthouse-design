@@ -8,9 +8,8 @@ import Loader from "../../layout/Loader";
 import Pagination from "react-js-pagination";
 import Slider from "@material-ui/core/Slider";
 import Typography from "@material-ui/core/Typography";
-import { Container } from "react-bootstrap";
 import { useReactToPrint } from 'react-to-print';
-import {Link, NavLink,useLocation} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 
 const categories = [

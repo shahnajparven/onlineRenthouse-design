@@ -1,5 +1,4 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { useHistory } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 
 // import './Pickup.css';
@@ -9,11 +8,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { useAlert } from "react-alert";
 import { createPickup, clearErrors } from "../../actions/pickupAction";
 import { NEW_PICKUP_RESET } from "../../constants/pickupConstants";
-import AccountTreeIcon from "@material-ui/icons/AccountTree";
-import DescriptionIcon from "@material-ui/icons/Description";
-import StorageIcon from "@material-ui/icons/Storage";
-import SpellcheckIcon from "@material-ui/icons/Spellcheck";
-import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
 import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
 import AccessibilityNewIcon from '@mui/icons-material/AccessibilityNew';
 import LocationCityIcon from '@mui/icons-material/LocationCity';

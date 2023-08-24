@@ -5,16 +5,13 @@ import { useSelector, useDispatch } from "react-redux";
 import { useAlert } from "react-alert";
 import ProductCard from "./ProductCard";
 import Loader from "../../layout/Loader";
-import { Link } from "react-router-dom";
-import Home from "./Home";
-
 
 const Product = () => {
 
 
   const alert = useAlert();
   const dispatch = useDispatch();
-  const { loading, error, products, productsCount } = useSelector(state => state.products);
+  const { loading, error, products } = useSelector(state => state.products);
 
   useEffect(() => {
     if(error){

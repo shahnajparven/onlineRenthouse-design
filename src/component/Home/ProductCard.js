@@ -1,11 +1,7 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import Reactstars from 'react-rating-stars-component';
-import { getProduct } from "../../actions/productAction";
-import { useSelector, useDispatch } from "react-redux";
-import { useAlert } from "react-alert";
-import Loader from '../../layout/Loader';
-import { clearErrors } from "../../actions/productAction";
+
 import "./Product.css";
 
 
@@ -16,7 +12,6 @@ const ProductCard = ({ product }) => {
     color: "rgba(20,20,20,0,1)",
     activeColor: "tomato",
     size: window.innerWidth < 600 ? 20 : 25,
-    color:"black",
     value: product.ratings,
     isHalf: true,
   };
