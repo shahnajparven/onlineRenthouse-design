@@ -201,7 +201,7 @@ const Productttt = ({ history }) => {
           <div class="row">
             <div className='g-pic'>
             
-            <img src={pic}/> 
+            <img src={pic} alt='pic'/> 
             </div>
             </div>
             <div class="row">
