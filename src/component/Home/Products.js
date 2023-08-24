@@ -32,7 +32,7 @@ const alert = useAlert();
   const [category, setCategory] = useState("");
   const [ratings, setRatings] = useState(0);
 
-  const { products, loading, error, productsCount, resultPerPage,filteredProductsCount } = useSelector(
+  const { products, loading, error, productsCount, resultPerPage } = useSelector(
     (state) => state.products);
 
 
@@ -46,7 +46,7 @@ const alert = useAlert();
     setPrice(newPrice);
   };
 
-  let count = filteredProductsCount;
+  // let count = filteredProductsCount;
 
 
   useEffect(() => {
