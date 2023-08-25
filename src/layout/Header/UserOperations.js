@@ -11,12 +11,11 @@ import { useHistory } from "react-router-dom";
 import { useAlert } from "react-alert";
 import { logout } from "../../actions/userAction";
 import { useDispatch, useSelector } from "react-redux";
-
-
+import "../../Main.css";
+import $ from "jquery";
 export const UserOperations = ({ user }) => {
-
   const { cartItems } = useSelector((state) => state.cart);
-    const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const history = useHistory();
   const alert = useAlert();
@@ -62,43 +61,48 @@ export const UserOperations = ({ user }) => {
   function logoutUser() {
     dispatch(logout());
     alert.success("Logout Successfully");
-  
   }
-
-
+  //for scrolled jquery
+  $(window).scroll(function () {
+    $(".speedDial").toggleClass(
+      "scrolled",
+      $(this).scrollTop() > 80
+    );
+  });
   return (
-    
     <Fragment>
-    <Backdrop open={open} style={{ zIndex: "10" }} />
-    <SpeedDial
-      ariaLabel="SpeedDial tooltip example"
-      onClose={() => setOpen(false)}
-      onOpen={() => setOpen(true)}
-      style={{ zIndex: "11" }}
-      open={open}
-      direction="down"
-      className="speedDial"
-      icon={
-        <img
-          className="speedDialIcon"
-          src={user.avatar.url ? user.avatar.url : "/Profile.png"}
-          alt="Profile"
-        />
-      }
-    >
-      {options.map((item) => (
-        <SpeedDialAction
-          key={item.name}
-          icon={item.icon}
-          tooltipTitle={item.name}
-          onClick={item.func}
-          tooltipOpen={window.innerWidth <= 600 ? true : false}
-        />
-      ))}
-    </SpeedDial>
-  </Fragment>
-        
-       
+      <Backdrop open={open} style={{ zIndex: "10" }} />
+      
+        <SpeedDial
+          ariaLabel="SpeedDial tooltip example"
+          onClose={() => setOpen(false)}
+          onOpen={() => setOpen(true)}
+          style={{ zIndex: "11"}}
+          FabProps={{  style: { backgroundColor: "yellow",height:50,width:50 } }}
+          open={open}
+          direction="down"
+          className="speedDial"
+          icon={
+            <img
+              height={50}
+              width={50}
+              style={{borderRadius: '50%'}}
+              src={user.avatar.url ? user.avatar.url : "/Profile.png"}
+              alt="Profile"
+            />
+          }
+        >
+          {options.map((item) => (
+            <SpeedDialAction
+              key={item.name}
+              icon={item.icon}
+              tooltipTitle={item.name}
+              onClick={item.func}
+              tooltipOpen={window.innerWidth <= 600 ? true : false}
+            />
+          ))}
+        </SpeedDial>
+    </Fragment>
   );
 };
 export default UserOperations;

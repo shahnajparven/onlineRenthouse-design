@@ -1,77 +1,82 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-
-.navbar.scrolled {
-    height: 10vh !important;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.26);
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.navarea.scrolled {
+  height: 15vh !important;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.26);
+}
+.speedDial.scrolled {
+    top: 1.7vmax;
   }
-.navitms.scrolled {
-    display: none !important;
-   } 
+.firstNavArea.scrolled {
+  display: none !important;
+}
+.secondNavArea.scrolled {
+  display: none !important;
+}
 
-
- /* for searchbar   */
+/*for searchbar   */
 
 .searchbarnav.scrolled {
-    display: block !important;
-} 
+  display: block !important;
+}
 .searchbarbanner.scrolled {
-    display: none !important;
-} 
-
-.searchbarnav{
-    background-color:#ffffff;
-    position: absolute;
-    margin-top: 1vh;
-    margin-left: 30%;
-    width: 16%;
-    border-radius: 1rem;
-    display: none !important;
-}
-.menav-2{
-    font-size: .9rem !important;
-    border-radius: 2rem !important;
-}
-.navbtn{
-    position: absolute;
-    margin-left:88%;
-    margin-top: .1rem;
+  display: none !important;
 }
 
-.searchbarbanner{
-    position: absolute;
-    margin-top: 45vh;
-    margin-left: 35%;
-    width: 30%;
-    z-index: 2;
+.searchbarnav {
+  background-color: #ffffff;
+  position: absolute;
+  margin-top: 1vh;
+  margin-left: 30%;
+  width: 16%;
+  border-radius: 1rem;
+  display: none !important;
 }
-.me-2{
-    font-size: .9rem !important;
-    height: 7vh;
-    width: 5%;
-    padding: 5px;
-    border-radius: 5rem !important;
-    margin-right:0 !important;    
+.menav-2 {
+  font-size: 0.9rem !important;
+  border-radius: 2rem !important;
 }
-.bannerbtn{
-    position: absolute;
-    margin-left:90%;
-    margin-top: .3rem;
+.navbtn {
+  position: absolute;
+  margin-left: 88%;
+  margin-top: 0.1rem;
 }
 
-
+.searchbarbanner {
+  position: absolute;
+  margin-top: 45vh;
+  margin-left: 35%;
+  width: 30%;
+}
+.me-2 {
+  font-size: 0.9rem !important;
+  height: 7vh;
+  width: 5%;
+  padding: 5px;
+  border-radius: 5rem !important;
+  margin-right: 0 !important;
+}
+.bannerbtn {
+  position: absolute;
+  margin-left: 90%;
+  margin-top: 0.3rem;
+}
 
 /* for searchbar   */
 
-
-.greenColor{
-    color: green !important;
+.greenColor {
+  color: green !important;
 }
-.redColor{
-    color: red !important;
+.redColor {
+  color: red !important;
 }

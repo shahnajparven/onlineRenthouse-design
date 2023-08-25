@@ -50,6 +50,7 @@ import ProcessOrder from "./component/admin/ProcessOrder.js";
 import PickupList from "./component/admin/PickupList.js";
 import Renthouse from "./component/category/Renthouse.js";
 import RenthouseChart from "./component/category/RenthouseChart.js";
+import Bannerr from "./component/Home/Bannerr.js";
 
 const Main = () => {
 
@@ -76,7 +77,8 @@ const Main = () => {
     return (
 
         <Router>
-            <Navigation />
+            <Navigation isAuthenticated={isAuthenticated}/>
+           
 
             {isAuthenticated && <UserOptions user={user} />}
 
@@ -99,6 +101,8 @@ const Main = () => {
 
                 <Route exact path="/search" component={Search} />
 
+
+                <Route exact path="/bannerr" component={Bannerr} />
 
                 <Route extact path='/ProductCard' component={ProductCard} />
                 <Route extact path='/Product' component={Product} />
