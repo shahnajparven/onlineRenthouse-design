@@ -33,7 +33,7 @@ import Test from "./component/pickup/Test.js";
 import Notes from "./component/pickup/Notes.js";
 import Shipping from "./component/cart/Shipping.js";
 import ConfirmOrder from "./component/cart/ConfirmOrder.js";
-import axios from "axios";
+// import axios from "axios";
 import Payment from "./component/cart/Payment.js";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
@@ -51,6 +51,7 @@ import PickupList from "./component/admin/PickupList.js";
 import Renthouse from "./component/category/Renthouse.js";
 import RenthouseChart from "./component/category/RenthouseChart.js";
 import Bannerr from "./component/Home/Bannerr.js";
+import apiInstance from "./config/axios.js";
 
 const Main = () => {
 
@@ -58,7 +59,7 @@ const Main = () => {
     const [stripeApiKey, setStripeApiKey] = useState("");
 
     async function getStripeApiKey() {
-        const { data } = await axios.get("/api/v1/stripeapikey");
+        const { data } = await apiInstance.get("/api/v1/stripeapikey");
 
         setStripeApiKey(data.stripeApiKey);
     }

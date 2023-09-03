@@ -1,4 +1,5 @@
-import axios from "axios";
+
+import apiInstance from "../config/axios";
 import {
   
   NEW_PICKUP_REQUEST,
@@ -29,7 +30,7 @@ export const createPickup = (pickupData) => async (dispatch) => {
       headers: { "Content-Type": "application/json" },
     };
 
-    const { data } = await axios.post(
+    const { data } = await apiInstance.post(
       `/api/v1//pickup/new`,
       pickupData,
       config
@@ -52,7 +53,7 @@ export const getAdminPickup = () => async (dispatch) => {
   try {
     dispatch({ type: ADMIN_PICKUP_REQUEST });
 
-    const { data } = await axios.get("/api/v1/admin/pickups");
+    const { data } = await apiInstance.get("/api/v1/admin/pickups");
 
     dispatch({
       type: ADMIN_PICKUP_SUCCESS,
@@ -76,7 +77,7 @@ export const updatePickup = (id, productData) => async (dispatch) => {
       headers: { "Content-Type": "application/json" },
     };
 
-    const { data } = await axios.put(
+    const { data } = await apiInstance.put(
       `/api/v1/pickup/${id}`,
       productData,
       config
@@ -99,7 +100,7 @@ export const deletePickup = (id) => async (dispatch) => {
   try {
     dispatch({ type: DELETE_PICKUP_REQUEST });
 
-    const { data } = await axios.delete(`/api/v1/pickup/${id}`);
+    const { data } = await apiInstance.delete(`/api/v1/pickup/${id}`);
 
     dispatch({
       type: DELETE_PICKUP_SUCCESS,
