@@ -2,6 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+
   "dependencies": {
     "@devexpress/dx-react-chart": "^3.0.3",
     "@devexpress/dx-react-chart-bootstrap4": "^3.0.3",
@@ -76,6 +77,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://192.168.0.117:4000"
-  
+  "proxy": "https://renthouse-server.onrender.com"
 }

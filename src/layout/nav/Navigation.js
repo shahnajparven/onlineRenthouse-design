@@ -7,8 +7,8 @@ import "../../Main.css";
 import { NavLink } from "react-router-dom";
 import { Box, Divider, IconButton } from "@mui/material";
 import $ from "jquery";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import CallIcon from "@mui/icons-material/Call";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -77,7 +77,7 @@ const Navigation = ({ isAuthenticated }) => {
           </IconButton>
 
           <IconButton sx={{color:'white'}}>
-            <LinkedInIcon />
+            <FacebookOutlinedIcon />
           </IconButton>
 
           <IconButton sx={{color:'white'}}>
