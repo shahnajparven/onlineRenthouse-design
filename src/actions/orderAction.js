@@ -37,7 +37,7 @@ import {
           "Content-Type": "application/json",
         },
       };
-      const { data } = await apiInstance.post("/api/v1/order/new", order, config);
+      const { data } = await apiInstance.post("https://renthouse-server.onrender.com/api/v1/order/new", order, config);
   
       dispatch({ type: CREATE_ORDER_SUCCESS, payload: data });
     } catch (error) {
@@ -53,7 +53,7 @@ import {
     try {
       dispatch({ type: MY_ORDERS_REQUEST });
   
-      const { data } = await apiInstance.get("/api/v1/orders/me");
+      const { data } = await apiInstance.get("https://renthouse-server.onrender.com/api/v1/orders/me");
   
       dispatch({ type: MY_ORDERS_SUCCESS, payload: data.orders });
     } catch (error) {
@@ -69,7 +69,7 @@ import {
     try {
       dispatch({ type: ALL_ORDERS_REQUEST });
   
-      const { data } = await apiInstance.get("/api/v1/admin/orders");
+      const { data } = await apiInstance.get("https://renthouse-server.onrender.com/api/v1/admin/orders");
   
       dispatch({ type: ALL_ORDERS_SUCCESS, payload: data.orders });
     } catch (error) {
@@ -91,7 +91,7 @@ import {
         },
       };
       const { data } = await apiInstance.put(
-        `/api/v1/admin/order/${id}`,
+        `https://renthouse-server.onrender.com/api/v1/admin/order/${id}`,
         order,
         config
       );
@@ -110,7 +110,7 @@ import {
     try {
       dispatch({ type: DELETE_ORDER_REQUEST });
   
-      const { data } = await apiInstance.delete(`/api/v1/admin/order/${id}`);
+      const { data } = await apiInstance.delete(`https://renthouse-server.onrender.com/api/v1/admin/order/${id}`);
   
       dispatch({ type: DELETE_ORDER_SUCCESS, payload: data.success });
     } catch (error) {
@@ -126,7 +126,7 @@ import {
     try {
       dispatch({ type: ORDER_DETAILS_REQUEST });
   
-      const { data } = await apiInstance.get(`/api/v1/order/${id}`);
+      const { data } = await apiInstance.get(`https://renthouse-server.onrender.com/api/v1/order/${id}`);
   
       dispatch({ type: ORDER_DETAILS_SUCCESS, payload: data.order });
     } catch (error) {
@@ -142,7 +142,7 @@ export const deleteProduct = (id) => async (dispatch) => {
   try {
     dispatch({ type: DELETE_PRODUCT_REQUEST });
 
-    const { data } = await apiInstance.delete(`/api/v1/product/${id}`);
+    const { data } = await apiInstance.delete(`https://renthouse-server.onrender.com/api/v1/product/${id}`);
 
     dispatch({
       type: DELETE_PRODUCT_SUCCESS,

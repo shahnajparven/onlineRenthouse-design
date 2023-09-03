@@ -31,7 +31,7 @@ export const createPickup = (pickupData) => async (dispatch) => {
     };
 
     const { data } = await apiInstance.post(
-      `/api/v1//pickup/new`,
+      `https://renthouse-server.onrender.com/api/v1//pickup/new`,
       pickupData,
       config
     );
@@ -53,7 +53,7 @@ export const getAdminPickup = () => async (dispatch) => {
   try {
     dispatch({ type: ADMIN_PICKUP_REQUEST });
 
-    const { data } = await apiInstance.get("/api/v1/admin/pickups");
+    const { data } = await apiInstance.get("https://renthouse-server.onrender.com/api/v1/admin/pickups");
 
     dispatch({
       type: ADMIN_PICKUP_SUCCESS,
@@ -78,7 +78,7 @@ export const updatePickup = (id, productData) => async (dispatch) => {
     };
 
     const { data } = await apiInstance.put(
-      `/api/v1/pickup/${id}`,
+      `https://renthouse-server.onrender.com/api/v1/pickup/${id}`,
       productData,
       config
     );
@@ -100,7 +100,7 @@ export const deletePickup = (id) => async (dispatch) => {
   try {
     dispatch({ type: DELETE_PICKUP_REQUEST });
 
-    const { data } = await apiInstance.delete(`/api/v1/pickup/${id}`);
+    const { data } = await apiInstance.delete(`https://renthouse-server.onrender.com/api/v1/pickup/${id}`);
 
     dispatch({
       type: DELETE_PICKUP_SUCCESS,

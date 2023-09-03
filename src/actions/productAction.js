@@ -65,7 +65,7 @@ export const getAdminProduct = () => async (dispatch) => {
   try {
     dispatch({ type: ADMIN_PRODUCT_REQUEST });
 
-    const { data } = await apiInstance.get("/api/v1/admin/products");
+    const { data } = await apiInstance.get("https://renthouse-server.onrender.com/api/v1/admin/products");
 
     dispatch({
       type: ADMIN_PRODUCT_SUCCESS,
@@ -89,7 +89,7 @@ export const createProduct = (productData) => async (dispatch) => {
     };
 
     const { data } = await apiInstance.post(
-      `/api/v1/product/new`,
+      `https://renthouse-server.onrender.com/api/v1/product/new`,
       productData,
       config
     );
@@ -117,7 +117,7 @@ export const updateProduct = (id, productData) => async (dispatch) => {
     };
 
     const { data } = await apiInstance.put(
-      `/api/v1/product/${id}`,
+      `https://renthouse-server.onrender.com/api/v1/product/${id}`,
       productData,
       config
     );
@@ -139,7 +139,7 @@ export const deleteProduct = (id) => async (dispatch) => {
   try {
     dispatch({ type: DELETE_PRODUCT_REQUEST });
 
-    const { data } = await apiInstance.delete(`/api/v1/product/${id}`);
+    const { data } = await apiInstance.delete(`https://renthouse-server.onrender.com/api/v1/product/${id}`);
 
     dispatch({
       type: DELETE_PRODUCT_SUCCESS,
@@ -158,7 +158,7 @@ export const getProductDetails = (id) => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_DETAILS_REQUEST });
 
-    const { data } = await apiInstance.get(`/api/v1/product/${id}`);
+    const { data } = await apiInstance.get(`https://renthouse-server.onrender.com/api/v1/product/${id}`);
 
     dispatch({
       type: PRODUCT_DETAILS_SUCCESS,
@@ -182,7 +182,7 @@ export const newReview = (reviewData) => async (dispatch) => {
       headers: { "Content-Type": "application/json" },
     };
 
-    const { data } = await apiInstance.put(`/api/v1/review`, reviewData, config);
+    const { data } = await apiInstance.put(`https://renthouse-server.onrender.com/api/v1/review`, reviewData, config);
 
     dispatch({
       type: NEW_REVIEW_SUCCESS,
