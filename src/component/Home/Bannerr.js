@@ -8,9 +8,9 @@ const Bannerr = ({ history }) => {
   const searchSubmitHandler = (e) => {
     e.preventDefault();
     if (keyword.trim()) {
-      window.location.replace("/products/" + keyword);
+      window.location.replace("products/" + keyword);
     } else {
-      history.push("/products");
+      history.push("products");
     }
   };
 
